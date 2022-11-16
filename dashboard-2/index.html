@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard | TICCA</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.png" alt="TICCA">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">TICCA</span>
+                    <span class="profession">Dashboard</span>
+                </div>
+            </div>
+            <i id="toggle" class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-command icon'></i>
+                            <span class="text nav-text">Page 1</span>
+                        </a>
+                        <span class="tooltip">Page 1</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-command icon'></i>
+                            <span class="text nav-text">Page 2</span>
+                        </a>
+                        <span class="tooltip">Page 2</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-command icon' ></i>
+                            <span class="text nav-text">Page 3</span>
+                        </a>
+                        <span class="tooltip">Page 3</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                    <span class="tooltip">Logout</span>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <nav class="navbar">
+            <!-- <button class="nav-toggle"><i class='bx bx-command icon'></i></button> -->
+            
+            <div class="image-text2">
+                <span class="pic">
+                    <img src="img/logo.png" alt="UserName">
+                </span>
+                <div class="text">
+                    <span class="name">UserName</span>
+                </div>
+            </div>
+        </nav>
+        <div class="home-content">
+            <div class="overview-boxes">
+              <div class="box">
+                <div class="right-side">
+                  <div class="box-topic">ON GOING PROJECT</div>
+                  <div class="number">5</div>
+                  <div class="indicator">
+                    <span class="text">Updated!</span>
+                  </div>
+                </div>
+                <i class='bx bx-atom cart'></i>
+              </div>
+              <div class="box">
+                <div class="right-side">
+                  <div class="box-topic">COMPLETED</div>
+                  <div class="number">5</div>
+                  <div class="indicator">
+                    <span class="text">Updated!</span>
+                  </div>
+                </div>
+                <i class='bx bx-atom cart'></i>
+              </div>
+              <div class="box">
+                <div class="right-side">
+                  <div class="box-topic">MEMBER STATUS</div>
+                  <div class="number">5</div>
+                  <div class="indicator">
+                    <span class="text">Updated!</span>
+                  </div>
+                </div>
+                <i class='bx bx-atom cart'></i>
+              </div>
+              <div class="box">
+                <div class="right-side">
+                  <div class="box-topic">ON LEAVE</div>
+                  <div class="number">5</div>
+                  <div class="indicator">
+                    <span class="text">Updated!</span>
+                  </div>
+                </div>
+                <i class='bx bx-atom cart'></i>
+              </div>
+            </div>
+        </div>
+        <div class="todo-container">
+            <div id="left-box" class="status" id="no_status">
+              <div id="box-1" class="todo" draggable="true">
+                <span class="box-topic">Part-1</span>
+                <span class="minimize" onclick="minimize1()">-</span>
+                <span class="close" onclick="close1()">&times;</span>
+                <div id="box-details-1" class="box-details">
+                    <div class="element-1">Hello World!</div>
+                    <br>
+                    <div class="element-2">How are you?</div>
+                </div>
+              </div>
+              <div id="box-3" class="todo" draggable="true">
+                <span class="box-topic">Part-3</span>
+                <span class="minimize" onclick="minimize3()">-</span>
+                <span class="close" onclick="close3()">&times;</span>
+                <div id="box-details-3" class="box-details">
+                    <div class="element-1">Hello World!</div>
+                    <br>
+                    <div class="element-2">How are you?</div>
+                </div>
+              </div>
+            </div>
+            <div id="right-box" class="status">
+              <div id="box-2" class="todo" draggable="true">
+                <span class="box-topic">Part-2</span>
+                <span class="minimize" onclick="minimize2()">-</span>
+                <span class="close" onclick="close2()">&times;</span>
+                <div id="box-details-2" class="box-details">
+                  <div class="element-1">Hello World!</div>
+                  <br>
+                  <div class="element-2">How are you?</div>
+                </div>
+              </div>
+              <div id="box-4" class="todo" draggable="true">
+                <span class="box-topic">Part-4</span>
+                <span class="minimize" onclick="minimize4()">-</span>
+                <span class="close" onclick="close4()">&times;</span>
+                <div id="box-details-4" class="box-details">
+                  <div class="element-1">Hello World!</div>
+                  <br>
+                  <div class="element-2">How are you?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!----======== JAVASCRIPT ======== -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
